@@ -9,7 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r1 \
-        g++=9.2.0-r4 \
+        g++ \
         jpeg-dev=8-r6 \
         make=4.2.1-r2 \
         openssl-dev=1.1.1g-r0 \
@@ -19,7 +19,7 @@ RUN \
     && apk add --no-cache \
         npm=12.15.0-r1 \
         yarn=1.19.2-r0 \
-        ffmpeg=4.2.1-r3 \
+        ffmpeg \
         mysql-client=10.4.13-r0 \
         nodejs=12.15.0-r1 \
         python2=2.7.18-r0 \
