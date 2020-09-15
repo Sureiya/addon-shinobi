@@ -1,10 +1,11 @@
 {
-    "build_from": {
-        "aarch64": "homeassistant/aarch64-base:3.11",
-        "amd64": "homeassistant/amd64-base:3.11",
-        "armhf": "homeassistant/armhf-base:3.11",
-        "armv7": "homeassistant/armv7-base:3.11",
-        "i386": "homeassistant/i386-base:3.11"
-    },
-    "args": {}
+  "image": "hassioaddons/ubuntu-base-{arch}",
+  "squash": false,
+  "build_from": {
+    "aarch64": "arm64v8/ubuntu:bionic-20200403",
+    "amd64": "ubuntu:bionic-20200403",
+    "armv7": "arm32v7/ubuntu:bionic-20200403",
+    "i386": "i386/ubuntu:bionic-20200403"
+  },
+  "args": {}
 }
